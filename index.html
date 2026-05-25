@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site_title">Dalia Al-Kilani | AI & Robotics Engineer</title>
+    <meta name="description"
+        content="Portfolio of Dalia Al-Kilani - Software Engineer, Robotics Coach, Tech Content Creator, and AI Designer from Hama, Syria."
+        data-i18n="meta_description">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;700&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .education-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            margin-top: 2rem;
+            transition: all var(--transition-normal);
+        }
+
+        .education-card:hover {
+            box-shadow: var(--shadow-glow);
+            transform: translateY(-5px);
+        }
+
+        .education-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .education-header i {
+            font-size: 2rem;
+            color: var(--accent-primary);
+        }
+
+        .education-card h3 {
+            color: var(--text-primary);
+            font-size: 1.3rem;
+        }
+
+        .education-card h4 {
+            color: var(--accent-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .education-card p {
+            font-size: 1rem !important;
+            margin-bottom: 0.2rem !important;
+        }
+
+        /* Adjusted missing images style to center an icon */
+        .icon-card-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            background: rgba(255, 0, 110, 0.05);
+            font-size: 4rem;
+            color: var(--accent-secondary);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">Dalia<span class="highlight">.Tech</span></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text" data-i18n="loader_text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Dalia<span class="highlight">.Tech</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="#experience" data-i18n="nav_exp">Experience</a></li>
+                    <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-controls">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="lang-toggle" aria-label="Switch Language">
+                    <span class="lang-code">AR</span>
+                </button>
+                <button id="mobile-menu-btn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="badge" data-i18n="hero_badge">Computer Engineering • Hama, Syria</div>
+                <h1 data-i18n="hero_title">Dalia Al-Kilani</h1>
+                <h2 data-i18n="hero_subtitle">Software Engineer & Robotics Coach</h2>
+                <p data-i18n="hero_desc">Tech Content Creator and AI Designer passionate about Arduino, Machine
+                    Learning, and innovative solutions.</p>
+                <div class="cta-group">
+                    <a href="#video-showcase" class="btn btn-primary" data-i18n="btn_watch">Watch My Videos <i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="btn_contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <!-- Updated with local asset -->
+                    <img src="assets/images/dalia_hero.png" alt="Dalia Al-Kilani" data-i18n-alt="alt_hero"
+                        onerror="this.src='d.gif'; this.onerror='';">
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section_about">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-i18n="about_bio">Information Engineering student, Tech Content Creator, and Robotics
+                        enthusiast passionate about Arduino and AI-powered innovation. I create educational tech
+                        content, mentor young makers, and contribute to robotics initiatives through competitions,
+                        coaching, and prototyping projects. My goal is to simplify complex technologies and inspire the
+                        next generation of innovators.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">NLP (Natural Language Processing)</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">MediaPipe</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">ESP32</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Colab</span>
+                    </div>
+
+                    <!-- Education Card -->
+                    <div class="education-card">
+                        <div class="education-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3 data-i18n="edu_title">Education</h3>
+                        </div>
+                        <h4 data-i18n="edu_degree">Bachelor’s Degree, Computer Engineering</h4>
+                        <p><strong data-i18n="edu_uni">Al-Wataniya Private University</strong> • <span
+                                data-i18n="edu_date">Oct 2021 – Jul 2026</span></p>
+                        <p data-i18n="edu_grade">Grade: 82% (≈ 3.09 GPA)</p>
+                        <p data-i18n="edu_desc" style="color: var(--text-secondary); margin-top: 0.5rem;">Coursework:
+                            Machine Learning, AI, NLP, Data Structures, DB Systems, Software Engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section_exp">Experience</h2>
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="card achievement-card">
+                    <div class="card-image">
+                        <img src="assets/images/achievement_teens.png" alt="RFG Teens 2024" data-i18n-alt="alt_exp1">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="exp_1_title">Robotics Coach</h3>
+                        <p style="color:var(--accent-secondary); font-size:0.9rem; margin-bottom:0.5rem;"
+                            data-i18n="exp_1_org">Sanad Youth • Oct 2024 - Nov 2024</p>
+                        <p data-i18n="exp_1_desc">Guided 4 teams through project design, 3D modeling, and prototyping.
+                            Achieved 2nd place overall nationally in RFG Teens.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card achievement-card">
+                    <div class="card-image icon-card-image">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="exp_2_title">Technical Support</h3>
+                        <p style="color:var(--accent-secondary); font-size:0.9rem; margin-bottom:0.5rem;"
+                            data-i18n="exp_2_org">TechTide Expo • Oct 2024</p>
+                        <p data-i18n="exp_2_desc">Showcased robotics, computer vision, and interactive tech projects.
+                            Provided technical support for robotic systems.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card achievement-card">
+                    <div class="card-image">
+                        <img src="assets/images/achievement_capnodis.jpg" alt="RFG Youth 2023" data-i18n-alt="alt_exp3">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="exp_3_title">Competitor</h3>
+                        <p style="color:var(--accent-secondary); font-size:0.9rem; margin-bottom:0.5rem;"
+                            data-i18n="exp_3_org">RFG Youth • Sep 2023 - Dec 2023</p>
+                        <p data-i18n="exp_3_desc">Team CAPTCHA PHOBIA, 3rd place nationally. Designed a robotics
+                            prototype addressing agricultural challenges (pistachio pest control).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section_projects">Projects</h2>
+            <div class="projects-grid">
+                <!-- Proj 1 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/images/project_sign_language.jpg" alt="Sign Language Translator"
+                            data-i18n-alt="alt_proj1">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="proj_1_title">Bidirectional Sign-Language Translator</h3>
+                        <p style="color:var(--accent-secondary); font-size:0.9rem; margin-bottom:0.5rem;"
+                            data-i18n="proj_1_org">Feb 2025 – Jul 2025</p>
+                        <p data-i18n="proj_1_desc">AI-based system for real-time translation between sign language and
+                            spoken Arabic using MediaPipe, OpenCV, Random Forest, and interactive GUI.</p>
+                    </div>
+                </div>
+                <!-- Proj 2 -->
+                <div class="card">
+                    <div class="card-image icon-card-image" style="color: var(--accent-primary);">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="proj_2_title">AI Content Creator</h3>
+                        <p style="color:var(--accent-secondary); font-size:0.9rem; margin-bottom:0.5rem;"
+                            data-i18n="proj_2_org">Clapital • Jan 2026 - Mar 2026</p>
+                        <p data-i18n="proj_2_desc">Created AI-generated visual content, applied prompt engineering for
+                            short-form content generation and storytelling.</p>
+                    </div>
+                </div>
+                <!-- Proj 3 -->
+                <div class="card">
+                    <div class="card-image icon-card-image" style="color: #00f5ff;">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="proj_3_title">Online Mentor</h3>
+                        <p style="color:var(--accent-secondary); font-size:0.9rem; margin-bottom:0.5rem;"
+                            data-i18n="proj_3_org">Fathee Robotics • Jan 2026</p>
+                        <p data-i18n="proj_3_desc">Mentored teenagers for interactive robotics challenges at ملتقى
+                            روبوتات الفتاتيح, providing online technical support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase -->
+    <section id="video-showcase">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section_videos">Instagram Showcase</h2>
+            <div class="video-carousel">
+                <!-- Video 1 -->
+                <div class="video-card card hover-scale" style="padding: 0; overflow: hidden;">
+                    <div class="card-image" style="height: 300px;">
+                        <img src="assets/images/reel_cover_1.png" alt="Reel 1"
+                            style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div style="padding: 1.5rem; background: var(--bg-card);">
+                        <a href="https://www.instagram.com/p/DP38LlojLjt/" target="_blank"
+                            class="video-link btn btn-primary" style="width: 100%; justify-content: center;"
+                            data-i18n="watch_instagram">Watch on Instagram <i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Video 2 -->
+                <div class="video-card card hover-scale" style="padding: 0; overflow: hidden;">
+                    <div class="card-image" style="height: 300px;">
+                        <img src="assets/images/video_cover_1.jpg" alt="Video 1"
+                            style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div style="padding: 1.5rem; background: var(--bg-card);">
+                        <a href="https://www.instagram.com/p/DHZB0AgMxP5/" target="_blank"
+                            class="video-link btn btn-primary" style="width: 100%; justify-content: center;"
+                            data-i18n="watch_instagram">Watch on Instagram <i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Video 3 -->
+                <div class="video-card card hover-scale" style="padding: 0; overflow: hidden;">
+                    <div class="card-image" style="height: 300px;">
+                        <img src="assets/images/video_cover_2.jpg" alt="Video 2"
+                            style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div style="padding: 1.5rem; background: var(--bg-card);">
+                        <a href="https://www.instagram.com/p/DJPUoNrMdY2/" target="_blank"
+                            class="video-link btn btn-primary" style="width: 100%; justify-content: center;"
+                            data-i18n="watch_instagram">Watch on Instagram <i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section_contact">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/dalia-al-kilani/" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/daliaalkelani/" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/daliaalkilani1" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/Daliaalkilani" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="mailto:Daliaalkelani@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-i18n="label_name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="label_email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="label_message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-i18n="btn_send">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Dalia Al-Kilani. <span data-i18n="footer_rights">All Rights Reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
