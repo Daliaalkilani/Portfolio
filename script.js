@@ -9,7 +9,8 @@ const translations = {
         meta_description: "Portfolio of Dalia Al-Kilani - AI/NLP Engineer specializing in Arabic language models, robotics, and embedded systems.",
 
         // Navigation
-        nav_about: "About",
+        nav_resume: "Resume",
+        btn_resume: "View Resume",
         nav_exp: "Experience",
         nav_projects: "Projects",
         nav_awards: "Awards",
@@ -129,7 +130,8 @@ const translations = {
         meta_description: "معرض أعمال داليا الكيلاني - مهندسة ذكاء اصطناعي ومعالجة لغات طبيعية متخصصة في النماذج العربية والروبوتيكس.",
 
         // Navigation
-        nav_about: "عني",
+        nav_resume: "السيرة الذاتية",
+        btn_resume: "عرض السيرة الذاتية",
         nav_exp: "الخبرات",
         nav_projects: "المشاريع",
         nav_awards: "الجوائز",
