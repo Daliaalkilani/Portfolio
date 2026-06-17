@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="site_title">Dalia Al-Kilani | AI & NLP Engineer</title>
     <meta name="description"
-        content="Portfolio of Dalia Al-Kilani - Software Engineer, Robotics Coach, Tech Content Creator, and AI Designer from Hama, Syria."
+        content="Portfolio of Dalia Al-Kilani - AI/NLP Engineer specializing in Arabic language models, robotics, and embedded systems."
         data-i18n="meta_description">
 
     <!-- Fonts -->
@@ -20,65 +20,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
-    <style>
-        .education-card {
-            background: var(--bg-card);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 1.5rem;
-            border-radius: var(--radius-lg);
-            margin-top: 2rem;
-            transition: all var(--transition-normal);
-        }
-
-        .education-card:hover {
-            box-shadow: var(--shadow-glow);
-            transform: translateY(-5px);
-        }
-
-        .education-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .education-header i {
-            font-size: 2rem;
-            color: var(--accent-primary);
-        }
-
-        .education-card h3 {
-            color: var(--text-primary);
-            font-size: 1.3rem;
-        }
-
-        .education-card h4 {
-            color: var(--accent-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        .education-card p {
-            font-size: 1rem !important;
-            margin-bottom: 0.2rem !important;
-        }
-
-        /* Adjusted missing images style to center an icon */
-        .icon-card-image {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 200px;
-            background: rgba(255, 0, 110, 0.05);
-            font-size: 4rem;
-            color: var(--accent-secondary);
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--spacing-md);
-        }
-    </style>
 </head>
 
 <body>
@@ -102,6 +43,7 @@
                     <li><a href="#about" data-i18n="nav_about">About</a></li>
                     <li><a href="#experience" data-i18n="nav_exp">Experience</a></li>
                     <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                    <li><a href="#awards" data-i18n="nav_awards">Awards</a></li>
                     <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
@@ -125,18 +67,15 @@
             <div class="hero-text">
                 <div class="badge" data-i18n="hero_badge">Computer Engineering • Hama, Syria</div>
                 <h1 data-i18n="hero_title">Dalia Al-Kilani</h1>
-                <h2 data-i18n="hero_subtitle">Software Engineer & Robotics Coach</h2>
-                <p data-i18n="hero_desc">Tech Content Creator and AI Designer passionate about Arduino, Machine
-                    Learning, and innovative solutions.</p>
+                <h2 data-i18n="hero_subtitle">AI / NLP Engineer</h2>
+                <p data-i18n="hero_desc">Specializing in Arabic language models — fine-tuning AraBERT & MARBERT and deploying end-to-end ML systems across NLP and computer vision.</p>
                 <div class="cta-group">
-                    <a href="#video-showcase" class="btn btn-primary" data-i18n="btn_watch">Watch My Videos <i
-                            class="fab fa-instagram"></i></a>
+                    <a href="#video-showcase" class="btn btn-primary" data-i18n="btn_watch">Watch My Videos <i class="fab fa-instagram"></i></a>
                     <a href="#contact" class="btn btn-outline" data-i18n="btn_contact">Contact Me</a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="image-frame">
-                    <!-- Updated with local asset -->
                     <img src="assets/images/dalia_hero.png" alt="Dalia Al-Kilani" data-i18n-alt="alt_hero"
                         onerror="this.src='d.gif'; this.onerror='';">
                     <div class="floating-shape shape-1"></div>
@@ -152,41 +91,46 @@
             <h2 class="section-title" data-i18n="section_about">About Me</h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p data-i18n="about_bio">Information Engineering student, Tech Content Creator, and Robotics
-                        enthusiast passionate about Arduino and AI-powered innovation. I create educational tech
-                        content, mentor young makers, and contribute to robotics initiatives through competitions,
-                        coaching, and prototyping projects. My goal is to simplify complex technologies and inspire the
-                        next generation of innovators.</p>
-                    <div class="skills-list">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">NLP (Natural Language Processing)</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Computer Vision</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">scikit-learn</span>
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">MediaPipe</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">Hugging Face</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">SQL Server</span>
-                        <span class="skill-tag">Arduino</span>
-                        <span class="skill-tag">ESP32</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">Jupyter</span>
-                        <span class="skill-tag">Colab</span>
+                    <p data-i18n="about_bio">AI/NLP Engineer specializing in Arabic language models — fine-tuning AraBERT and MARBERT and deploying them into production environments. I build end-to-end ML systems across NLP and computer vision, from data preprocessing to model training and API deployment. I also mentor young makers in robotics and embedded systems, and create tech content that simplifies AI and inspires the next generation of innovators.</p>
+
+                    <h3 class="skills-section-title" data-i18n="skills_title">Core Competencies</h3>
+                    <div class="competency-grid">
+                        <div class="competency-item">
+                            <span class="competency-label" data-i18n="comp_nlp">Natural Language Processing</span>
+                            <span class="competency-detail">Arabic NLP, Transformer models, Text classification, Hugging Face, Fine-tuning</span>
+                        </div>
+                        <div class="competency-item">
+                            <span class="competency-label" data-i18n="comp_ml">Machine Learning</span>
+                            <span class="competency-detail">Model training, Model evaluation, Transfer learning, Supervised & Unsupervised Learning</span>
+                        </div>
+                        <div class="competency-item">
+                            <span class="competency-label" data-i18n="comp_deploy">Model Deployment</span>
+                            <span class="competency-detail">FastAPI, Flask</span>
+                        </div>
+                        <div class="competency-item">
+                            <span class="competency-label" data-i18n="comp_prog">Programming</span>
+                            <span class="competency-detail">Python, C/C++, JavaScript, PHP</span>
+                        </div>
+                        <div class="competency-item">
+                            <span class="competency-label" data-i18n="comp_data">Data Processing</span>
+                            <span class="competency-detail">Data collection, Data cleaning, Feature engineering, Pandas, NumPy, Scikit-learn</span>
+                        </div>
+                        <div class="competency-item">
+                            <span class="competency-label" data-i18n="comp_cv">Computer Vision</span>
+                            <span class="competency-detail">OpenCV, MediaPipe, Real-time pipelines</span>
+                        </div>
+                        <div class="competency-item">
+                            <span class="competency-label" data-i18n="comp_embedded">Embedded Systems</span>
+                            <span class="competency-detail">Arduino, ESP32, Raspberry Pi, Sensor integration</span>
+                        </div>
+                        <div class="competency-item">
+                            <span class="competency-label" data-i18n="comp_genai">Generative AI & Prompting</span>
+                            <span class="competency-detail">Prompt engineering, AI-generated content, Video generation</span>
+                        </div>
+                        <div class="competency-item">
+                            <span class="competency-label" data-i18n="comp_mentor">Mentoring & Training</span>
+                            <span class="competency-detail">Workshop delivery, Mentoring, Competition coaching</span>
+                        </div>
                     </div>
 
                     <!-- Education Card -->
@@ -195,12 +139,10 @@
                             <i class="fas fa-graduation-cap"></i>
                             <h3 data-i18n="edu_title">Education</h3>
                         </div>
-                        <h4 data-i18n="edu_degree">Bachelor’s Degree, Computer Engineering</h4>
-                        <p><strong data-i18n="edu_uni">Al-Wataniya Private University</strong> • <span
-                                data-i18n="edu_date">Oct 2021 – Jul 2026</span></p>
-                        <p data-i18n="edu_grade">Grade: 82% (≈ 3.09 GPA)</p>
-                        <p data-i18n="edu_desc" style="color: var(--text-secondary); margin-top: 0.5rem;">Coursework:
-                            Machine Learning, AI, NLP, Data Structures, DB Systems, Software Engineering.</p>
+                        <h4 data-i18n="edu_degree">Bachelor's Degree, Computer Engineering</h4>
+                        <p><strong data-i18n="edu_uni">Al-Wataniya Private University</strong> • <span data-i18n="edu_date">Oct 2021 – Jul 2026</span></p>
+                        <p data-i18n="edu_grade">GPA: 82% (≈ 3.09)</p>
+                        <p data-i18n="edu_desc" style="color: var(--text-secondary); margin-top: 0.5rem;">Relevant coursework: Natural Language Processing; Machine Learning; Embedded Systems.</p>
                     </div>
                 </div>
             </div>
@@ -211,46 +153,99 @@
     <section id="experience">
         <div class="container">
             <h2 class="section-title" data-i18n="section_exp">Experience</h2>
-            <div class="cards-grid">
-                <!-- Card 1 -->
-                <div class="card achievement-card">
-                    <div class="card-image">
-                        <img src="assets/images/achievement_teens.png" alt="RFG Teens 2024" data-i18n-alt="alt_exp1">
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="exp_1_title">Robotics Coach</h3>
-                        <p style="color:var(--accent-secondary); font-size:0.9rem; margin-bottom:0.5rem;"
-                            data-i18n="exp_1_org">Sanad Youth • Oct 2024 - Nov 2024</p>
-                        <p data-i18n="exp_1_desc">Guided 4 teams through project design, 3D modeling, and prototyping.
-                            Achieved 2nd place overall nationally in RFG Teens.</p>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="card achievement-card">
-                    <div class="card-image icon-card-image">
-                        <i class="fas fa-microchip"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="exp_2_title">Technical Support</h3>
-                        <p style="color:var(--accent-secondary); font-size:0.9rem; margin-bottom:0.5rem;"
-                            data-i18n="exp_2_org">TechTide Expo • Oct 2024</p>
-                        <p data-i18n="exp_2_desc">Showcased robotics, computer vision, and interactive tech projects.
-                            Provided technical support for robotic systems.</p>
+            <div class="timeline">
+
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="exp_1_title">Robotics Coach</h3>
+                                <p class="timeline-org" data-i18n="exp_1_org">Sanad Youth Organization • Oct 2024 – Nov 2024</p>
+                            </div>
+                            <span class="timeline-badge">2nd Place 🏆</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li data-i18n="exp_1_b1">Implemented sensor integration and control systems using Arduino and external sensors for competition-ready robotics platforms.</li>
+                            <li data-i18n="exp_1_b2">Mentored participants in embedded systems design and firmware troubleshooting.</li>
+                            <li data-i18n="exp_1_b3">Delivered hands-on workshops on system integration, testing procedures, and competition readiness.</li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Card 3 -->
-                <div class="card achievement-card">
-                    <div class="card-image">
-                        <img src="assets/images/achievement_capnodis.jpg" alt="RFG Youth 2023" data-i18n-alt="alt_exp3">
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="exp_3_title">Competitor</h3>
-                        <p style="color:var(--accent-secondary); font-size:0.9rem; margin-bottom:0.5rem;"
-                            data-i18n="exp_3_org">RFG Youth • Sep 2023 - Dec 2023</p>
-                        <p data-i18n="exp_3_desc">Team CAPTCHA PHOBIA, 3rd place nationally. Designed a robotics
-                            prototype addressing agricultural challenges (pistachio pest control).</p>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="exp_2_title">Online Mentor</h3>
+                                <p class="timeline-org" data-i18n="exp_2_org">Fathee The Robot • Jan 2026</p>
+                            </div>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li data-i18n="exp_2_b1">Mentored teenagers in robotics fundamentals and competition preparation.</li>
+                            <li data-i18n="exp_2_b2">Provided technical guidance and online support during robotics activities.</li>
+                            <li data-i18n="exp_2_b3">Conducted virtual sessions to support learning and feedback.</li>
+                            <li data-i18n="exp_2_b4">Contributed to a community initiative focused on robotics education and youth engagement.</li>
+                        </ul>
                     </div>
                 </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="exp_3_title">RFG Youth — Team Member</h3>
+                                <p class="timeline-org" data-i18n="exp_3_org">Sanad Youth Organization • Sep 2023 – Dec 2023</p>
+                            </div>
+                            <span class="timeline-badge">3rd Place 🥉</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li data-i18n="exp_3_b1">Designed and built an embedded robotics prototype for pest detection using microcontrollers and environmental sensors.</li>
+                            <li data-i18n="exp_3_b2">Integrated Arduino-based hardware with sensors and control components.</li>
+                            <li data-i18n="exp_3_b3">Validated system performance through real-world testing and technical demonstrations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Volunteering 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot timeline-dot--vol"></div>
+                    <div class="timeline-card card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="vol_1_title">Technical Support <span class="vol-tag" data-i18n="volunteering_tag">Volunteering</span></h3>
+                                <p class="timeline-org" data-i18n="vol_1_org">TechTide Expo • Oct 2024</p>
+                            </div>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li data-i18n="vol_1_b1">Led live robotics demonstrations showcasing sensor integration and control systems.</li>
+                            <li data-i18n="vol_1_b2">Translated embedded system concepts into step-by-step troubleshooting explanations for event visitors.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Volunteering 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot timeline-dot--vol"></div>
+                    <div class="timeline-card card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 data-i18n="vol_2_title">AI Content Creator <span class="vol-tag" data-i18n="volunteering_tag">Volunteering</span></h3>
+                                <p class="timeline-org" data-i18n="vol_2_org">Clapital • Jan 2026 – Mar 2026</p>
+                            </div>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li data-i18n="vol_2_b1">Produced short-form AI-generated video content and refined prompts to increase creative consistency.</li>
+                            <li data-i18n="vol_2_b2">Aligned AI content and prompt strategies with marketing campaign objectives.</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -260,44 +255,107 @@
         <div class="container">
             <h2 class="section-title" data-i18n="section_projects">Projects</h2>
             <div class="projects-grid">
-                <!-- Proj 1 -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/images/project_sign_language.jpg" alt="Sign Language Translator"
-                            data-i18n-alt="alt_proj1">
+
+                <!-- Project 1: NLP -->
+                <div class="card project-card">
+                    <div class="project-icon-area" style="background: linear-gradient(135deg, rgba(255,0,110,0.15), rgba(131,56,236,0.15));">
+                        <i class="fas fa-brain" style="color: var(--accent-primary);"></i>
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="proj_1_title">Bidirectional Sign-Language Translator</h3>
-                        <p style="color:var(--accent-secondary); font-size:0.9rem; margin-bottom:0.5rem;"
-                            data-i18n="proj_1_org">Feb 2025 – Jul 2025</p>
-                        <p data-i18n="proj_1_desc">AI-based system for real-time translation between sign language and
-                            spoken Arabic using MediaPipe, OpenCV, Random Forest, and interactive GUI.</p>
+                        <div class="project-tags">
+                            <span class="proj-tag">AraBERT</span>
+                            <span class="proj-tag">MARBERT</span>
+                            <span class="proj-tag">FastAPI</span>
+                            <span class="proj-tag">HuggingFace</span>
+                        </div>
+                        <h3 data-i18n="proj_1_title">NLP Text Classification System</h3>
+                        <ul class="timeline-bullets">
+                            <li data-i18n="proj_1_b1">Fine-tuned AraBERT and MARBERT on an annotated Arabic dataset for multi-class classification of university inquiries.</li>
+                            <li data-i18n="proj_1_b2">Designed a stratified 5-fold evaluation protocol to validate model stability.</li>
+                            <li data-i18n="proj_1_b3">Deployed as a production REST API using FastAPI for real-time inference.</li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Proj 2 -->
-                <div class="card">
-                    <div class="card-image icon-card-image" style="color: var(--accent-primary);">
-                        <i class="fas fa-robot"></i>
+
+                <!-- Project 2: Sign Language -->
+                <div class="card project-card">
+                    <div class="project-icon-area" style="background: linear-gradient(135deg, rgba(0,245,255,0.12), rgba(58,134,255,0.12));">
+                        <i class="fas fa-hands" style="color: var(--accent-secondary);"></i>
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="proj_2_title">AI Content Creator</h3>
-                        <p style="color:var(--accent-secondary); font-size:0.9rem; margin-bottom:0.5rem;"
-                            data-i18n="proj_2_org">Clapital • Jan 2026 - Mar 2026</p>
-                        <p data-i18n="proj_2_desc">Created AI-generated visual content, applied prompt engineering for
-                            short-form content generation and storytelling.</p>
+                        <div class="project-tags">
+                            <span class="proj-tag">MediaPipe</span>
+                            <span class="proj-tag">OpenCV</span>
+                            <span class="proj-tag">Random Forest</span>
+                            <span class="proj-tag">gTTS</span>
+                        </div>
+                        <h3 data-i18n="proj_2_title">Arabic Sign Language Translator</h3>
+                        <ul class="timeline-bullets">
+                            <li data-i18n="proj_2_b1">Built a real-time bidirectional translation system between sign language and speech using Python.</li>
+                            <li data-i18n="proj_2_b2">Implemented hand tracking using MediaPipe and OpenCV; trained Random Forest classifiers for gesture recognition.</li>
+                            <li data-i18n="proj_2_b3">Integrated speech-to-text and text-to-speech; developed a full GUI using CustomTkinter.</li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Proj 3 -->
-                <div class="card">
-                    <div class="card-image icon-card-image" style="color: #00f5ff;">
-                        <i class="fas fa-chalkboard-teacher"></i>
+
+                <!-- Project 3: Tasharok -->
+                <div class="card project-card">
+                    <div class="project-icon-area" style="background: linear-gradient(135deg, rgba(131,56,236,0.15), rgba(0,245,255,0.1));">
+                        <i class="fas fa-exchange-alt" style="color: var(--accent-tertiary);"></i>
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="proj_3_title">Online Mentor</h3>
-                        <p style="color:var(--accent-secondary); font-size:0.9rem; margin-bottom:0.5rem;"
-                            data-i18n="proj_3_org">Fathee Robotics • Jan 2026</p>
-                        <p data-i18n="proj_3_desc">Mentored teenagers for interactive robotics challenges at ملتقى
-                            روبوتات الفتاتيح, providing online technical support.</p>
+                        <div class="project-tags">
+                            <span class="proj-tag">React</span>
+                            <span class="proj-tag">Tailwind CSS</span>
+                            <span class="proj-tag">Laravel</span>
+                        </div>
+                        <h3 data-i18n="proj_3_title">Tasharok Platform</h3>
+                        <ul class="timeline-bullets">
+                            <li data-i18n="proj_3_b1">Built a full-stack peer-to-peer marketplace MVP for renting, swapping, and donating community resources.</li>
+                            <li data-i18n="proj_3_b2">Used React + Tailwind CSS for the frontend and Laravel for backend authentication, APIs, and core marketplace logic.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section_awards">Honors & Awards</h2>
+            <div class="awards-grid">
+                <div class="award-card card">
+                    <div class="award-icon"><i class="fas fa-medal"></i></div>
+                    <div class="award-content">
+                        <h3 data-i18n="award_1_title">Honorable Mention</h3>
+                        <p data-i18n="award_1_org">ICPC Africa & Arab Girls Contest</p>
+                        <span class="award-date">Jul 2023</span>
+                    </div>
+                </div>
+                <div class="award-card card">
+                    <div class="award-icon award-bronze"><i class="fas fa-trophy"></i></div>
+                    <div class="award-content">
+                        <h3 data-i18n="award_2_title">3rd Place</h3>
+                        <p data-i18n="award_2_org">RFG Youth Robotics Competition</p>
+                        <span class="award-date">Dec 2023</span>
+                    </div>
+                </div>
+                <div class="award-card card">
+                    <div class="award-icon award-silver"><i class="fas fa-trophy"></i></div>
+                    <div class="award-content">
+                        <h3 data-i18n="award_3_title">2nd Place</h3>
+                        <p data-i18n="award_3_org">RFG Teens Robotics Competition</p>
+                        <span class="award-date">Nov 2024</span>
+                    </div>
+                </div>
+                <div class="award-card card">
+                    <div class="award-icon award-bronze"><i class="fas fa-rocket"></i></div>
+                    <div class="award-content">
+                        <h3 data-i18n="award_4_title">3rd Place</h3>
+                        <p data-i18n="award_4_org">Startup Weekend Hama</p>
+                        <span class="award-date">Jan 2026</span>
                     </div>
                 </div>
             </div>
@@ -305,11 +363,10 @@
     </section>
 
     <!-- Video Showcase -->
-    <section id="video-showcase">
+    <section id="video-showcase" style="background: var(--bg-secondary);">
         <div class="container">
             <h2 class="section-title" data-i18n="section_videos">Instagram Showcase</h2>
             <div class="video-carousel">
-                <!-- Video 1 -->
                 <div class="video-card card hover-scale" style="padding: 0; overflow: hidden;">
                     <div class="card-image" style="height: 300px;">
                         <img src="assets/images/reel_cover_1.png" alt="Reel 1"
@@ -321,7 +378,6 @@
                             data-i18n="watch_instagram">Watch on Instagram <i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <!-- Video 2 -->
                 <div class="video-card card hover-scale" style="padding: 0; overflow: hidden;">
                     <div class="card-image" style="height: 300px;">
                         <img src="assets/images/video_cover_1.jpg" alt="Video 1"
@@ -333,7 +389,6 @@
                             data-i18n="watch_instagram">Watch on Instagram <i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <!-- Video 3 -->
                 <div class="video-card card hover-scale" style="padding: 0; overflow: hidden;">
                     <div class="card-image" style="height: 300px;">
                         <img src="assets/images/video_cover_2.jpg" alt="Video 2"
@@ -350,20 +405,16 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" style="background: var(--bg-secondary);">
+    <section id="contact">
         <div class="container">
             <h2 class="section-title" data-i18n="section_contact">Get In Touch</h2>
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/dalia-al-kilani/" target="_blank" aria-label="LinkedIn"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/daliaalkelani/" target="_blank" aria-label="Instagram"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/daliaalkilani1" target="_blank" aria-label="Facebook"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="https://github.com/Daliaalkilani" target="_blank" aria-label="GitHub"><i
-                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/dalia-al-kilani/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/daliaalkelani/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/daliaalkilani1" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/Daliaalkilani" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a href="mailto:Daliaalkelani@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
